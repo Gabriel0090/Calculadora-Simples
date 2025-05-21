@@ -19,3 +19,11 @@ function calcular(){
         document.getElementById('Resultado').innerHTML = ""
     }
 }
+function calcular() {
+    const resultado = document.getElementById('resultado');
+    try {
+        resultado.innerHTML = eval(resultado.innerHTML);
+    } catch {
+        resultado.innerHTML = 'Erro';
+    }
+}
