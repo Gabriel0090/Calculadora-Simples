@@ -12,12 +12,11 @@ function back() {
     document.getElementById('Resultado').innerHTML = resultado.substring(0, resultado.length - 1);
 }
 
-function calcular() {
+function calcular() {  // Nome corrigido para bater com o HTML
     var resultado = document.getElementById('Resultado');
     try {
         resultado.innerHTML = eval(resultado.innerHTML);
     } catch (e) {
         resultado.innerHTML = "Erro";
-
     }
 }
